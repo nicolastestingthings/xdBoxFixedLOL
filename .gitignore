@@ -1,3 +1,11 @@
+src2/
+build/
+build-android32/
+build-android64/
+
+test.txt
+test.cpp
+
 # Prerequisites
 *.d
 
@@ -10,12 +18,6 @@
 # Precompiled Headers
 *.gch
 *.pch
-
-# Linker files
-*.ilk
-
-# Debugger Files
-*.pdb
 
 # Compiled Dynamic libraries
 *.so
@@ -37,5 +39,31 @@
 *.out
 *.app
 
-# debug information files
-*.dwo
+# Macos be like
+**/.DS_Store
+
+# Cache files for Sublime Text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+
+# Ignore build folders
+**/build
+# Ignore platform specific build folders
+build-*/
+
+# Workspace files are user-specific
+*.sublime-workspace
+
+# ILY vscode
+**/.vscode
+.idea/
+
+# clangd
+.cache/
+
+# Visual Studio
+.vs/
+
+# CLion
+/cmake-build-*/
